@@ -33,6 +33,7 @@ def create_database():
         config["database_dir"],
         config["database_name"],
     )
+    
     conn = sqlite3.connect(database)
     conn.close()
 
