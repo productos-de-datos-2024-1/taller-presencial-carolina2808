@@ -32,6 +32,7 @@ def extract(cofig):
     logging.info("Starting data extraction")
     #
     path = os.path.join(cofig["stagging_dir"], "*.csv.zip")
+    print(f"path: {cofig["stagging_dir"]}")
     filenames = glob.glob(path)
     dataframes = [pd.read_csv(f, compression="zip") for f in filenames]
     df = pd.concat(dataframes)
