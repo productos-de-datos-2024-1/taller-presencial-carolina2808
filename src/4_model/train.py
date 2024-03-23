@@ -194,6 +194,7 @@ def load_train_and_test_datasets():
     ]
 
     train_file_path = os.path.join(config["downsampled_dir"], config["train_dataset"])
+    print(train_file_path)
     train_df = pd.read_csv(train_file_path)
     x_train = train_df[selected_columns]
     y_train = train_df["price"]
