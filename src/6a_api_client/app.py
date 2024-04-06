@@ -82,5 +82,5 @@ def index():
 
 if __name__ == "__main__":
     logging.info("Starting the application")
-    app.run(debug=True, port=5002)
+    app.run(debug=True, port=5001)
     logging.info("Starting the application")
