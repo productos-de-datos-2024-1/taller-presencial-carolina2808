@@ -1,6 +1,9 @@
 """Autograding script"""
 
 import os
+logs = "datalake/logs/"
+if not os.path.exists(logs):
+    os.makedirs(logs)
 
 # test code files
 assert os.path.exists("src/6b_api_client/config.json")
