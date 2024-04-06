@@ -33,7 +33,7 @@ COPY . /app/
 RUN pip install --upgrade pip
 RUN pip install pandas flask 
 RUN apk update && apk add python3-dev gcc g++ libc-dev libffi-dev
-RUN pip install scikit-learn==1.4.0 
+RUN pip install scikit-learn
 
 # Datalake
 RUN mkdir /datalake
